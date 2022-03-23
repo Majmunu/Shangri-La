@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color: #f4f5f6
+}
+.liji-register{
+	width: 1519px;
+	height: 102px;
+	background-color: #fff;
+	text-align: center;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);
+	color: #333;
+	margin-bottom: 1px;
+}
+.title-regular{
+	 padding-top: 10px;
+    font-size: 28px;
+   font-weight: 400;
+	font-family: SimSun,Microsoft YaHei,serif;
+}
+.text-regular{
+	padding-bottom: 5px;
+    font-size: 14px;
+    font-weight: 400;
+	font-family: Montserrat,SimHei,Microsoft YaHei,sans-serif;
+}
+.register-content{
+	width: 1519px;
+	height: 900px;
+	font-family: Montserrat,SimHei,Microsoft YaHei,sans-serif;
+}
+.register-form{
+	width: 630px;
+	height: 850px;
+
+	margin: 0 auto;
+}
+.form-1{
+	width: 630px;
+	height: 77px;
+	
+	margin-top: 30px;
+}
+.appellation{
+	width: 140px;
+	height: 77px;
+	
+	float: left;
+}
+.appe-opt{
+	width: 140px;
+	height: 46px;
+	
+	position: relative;
+    margin-top: 6px;
+    line-height: 46px;
+    padding: 0 12px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.lastname{
+	width: 215px;
+	height: 77px;
+	
+	float: left;
+	margin-left: 30px;
+}
+.lastname-{
+	width: 190px;
+	height: 46px;
+	appearance:none;
+	position: relative;
+    margin-top: 6px;
+    line-height: 46px;
+    padding: 0 12px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.birth{
+	width: 190px;
+	height: 77px;
+
+	float: left;
+	margin-right: 20px;
+}
+.birth-{
+	width: 182px;
+	height: 46px;
+	margin-top: 3px;
+	position: relative;
+    margin-top: 6px;
+    line-height: 46px;
+    padding: 0 12px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+	float: left;
+	
+}
+.nation{
+	width: 628px;
+	height: 44px;
+	 border: 1px solid #ccc;
+	margin-top: 10px;
+	position: relative;
+    margin-top: 6px;
+    line-height: 46px;
+    padding: 0 12px; 
+    cursor: pointer;
+	float: left;
+}
+.email1{
+	width: 602px;
+	height: 44px;
+	 border: 1px solid #ccc;
+	margin-top: 10px;
+	position: relative;
+    margin-top: 6px;
+    line-height: 46px;
+    padding: 0 12px; 
+    cursor: pointer;
+	float: left;
+}
+.submit-form{
+	width: 630px;
+	height: 48px;
+     color: #fff;
+    background-color: #cba65d;
+	border: 1px solid #ccc;
+}
+a{
+	color: aliceblue;
+}

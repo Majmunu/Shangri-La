@@ -1,0 +1,343 @@
+﻿<?php
+
+if (isset($_POST['login']))
+{
+	echo '<script language="javascript">';
+
+ echo "location.href='登录.php'";
+echo '</script>';
+}
+if (isset($_POST['register']))
+{
+	echo '<script language="javascript">';
+
+ echo "location.href='立即加入.php'";
+echo '</script>';
+}
+if (isset($_POST['search']))
+{
+	echo '<script language="javascript">';
+
+ echo "location.href='查找预定.php'";
+echo '</script>';
+}
+if (isset($_POST['sou']))
+{
+	echo '<script language="javascript">';
+
+ echo "location.href='立即预定.php'";
+echo '</script>';
+}
+if($_GET['id'])
+{
+      $id = $_GET['id'];
+}
+
+?>
+<!DOCTYPE HTML>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>香格里拉酒店</title>
+<link rel="stylesheet" href="css/index.css">
+<script src="js/lb.js"></script>
+<script>
+window.onload = function () {
+  const options = {
+	id: 'lb-1',
+	speed: 600,
+	delay: 3000,
+	direction: 'left',
+	moniterKeyEvent: true,
+	moniterTouchEvent: true
+  }
+  const lb = new Lb(options);
+  lb.start();
+}
+</script>
+</head>
+	<style type="text/css">
+   .login{
+   	border: 0px;
+   }
+</style>
+<body>
+
+	<div id="header">
+		<div id="header-n">
+
+			<div id="logo"><img src="images/logo.png" style="width: 180px;height: 19px;margin: 0"></div>
+	          <div id="header-r"><form method="post">
+			         <input  type="submit" class="login" value="登录" name="login">&nbsp;&nbsp; |
+					 <input type="submit" name="register" class="login" value="立即加入" border 0px;>&nbsp;&nbsp;&nbsp;
+					 <input type="submit" name="search" class="login" value="查找预定">&nbsp; &nbsp;|
+				  <a class="login" style="color:">&nbsp;简体中文 </a> &nbsp;| <a style="color: #000" class="login">&nbsp;CNY</a><a style="color:" class="login" href="账户资料.php?id=<?php echo $id?>">更改用户资料</a>
+					 </form>
+		     </div>
+	  </div>
+	</div>
+	<div id="menu">
+		<div id="menu-font">
+		    <ul id="menu-u">
+				<li>酒店与度假酒店</li>
+		        <li>优惠</li>
+                <li>餐厅与酒吧</li>
+                <li>婚宴与庆典</li>
+                <li>会议与宴会</li>
+                <li>贵宾金环会</li>
+			</ul>
+		</div>
+	</div>
+	<form>
+	<div id="search-box">
+		<div id="city">
+				<svg width="1em" height="1em" viewBox="0 0 16 16" class="city-logo" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                </svg>
+			    <select name="city" class="form-" size="" >
+					<option>下一个目的地是</option>
+					<option></option>
+					<option></option>
+					<option></option>
+					<option></option>
+			    </select>
+		</div>
+		<div id="date">
+			<input type="date" name="date" class="form-date" >
+			<input type="date" name="date" class="form-date" >
+		</div>
+		<div id="room">
+			<svg width="1em" height="1em" viewBox="0 0 16 16" class="city-logo" fill="currentColor" >
+		    <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            </svg>
+			<select name="room" class="form-room">
+					<option>1客房</option>
+					<option></option>
+				    <option></option>
+					<option></option>
+				</select>
+				<select name="people" class="form-room">
+					<option>1成人</option>
+					<option></option>
+				    <option></option>
+					<option></option>
+				</select>
+				<select name="child" class="form-room">
+					<option>1儿童</option>
+					<option></option>
+				    <option></option>
+					<option></option>
+				</select>
+		</div>
+
+		<div id="discount">
+			<form method="post">
+			<svg width="1em" height="1em" viewBox="0 0 16 16" class="city-logo" fill="currentColor" >
+            <path fill-rule="evenodd" d="M4 0h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H4z"/>
+            <path fill-rule="evenodd" d="M8.646 5.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 8 8.646 6.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 8l1.647-1.646a.5.5 0 0 0 0-.708z"/>
+            </svg>
+			<input type="number" name="discount" class="form-discount" placeholder="优惠码">
+		</div>
+		<div class="search">
+			<div id="search-div"><a href="立即预定.php">立即预定</a></div>
+			</form>
+		</div>
+	</div>
+	</form>
+	<div id="banner">
+<div class="lb-box" id="lb-1">
+<!-- 轮播内容 -->
+<div class="lb-content">
+  <div class="lb-item active">
+	<a href="#">
+	  <img src="images/t1.png" alt="picture loss" width="1519px" height="590px">
+	</a>
+	  <div class="banner-text">
+		  <p class="banner-tiltle">香格里拉小假期</p>
+		  <p class="banner-contect">享受下次住宿的特别房价保证</p>
+	  </div>
+  </div>
+  <div class="lb-item">
+	<a href="#">
+	  <img src="images/t2.png" alt="picture loss" width="1519px" height="590px">
+		<div class="banner-text">
+          <p class="banner-tiltle">香格里拉"安心守护承诺"</p>
+		  <p class="banner-contect">我们致力于营造一个舒心、安全的环境，为了您所珍惜的那些重要时刻</p>
+		</div>
+	</a>
+  </div>
+  <div class="lb-item">
+	<a href="#">
+	  <img src="images/t3.png" alt="picture loss" width="1519px" height="590px">
+		<div class="banner-text">
+          <p class="banner-tiltle">情定香格里拉，见证爱情永久</p>
+		  <p class="banner-contect">我们以尊享礼遇，陪伴您说出“我愿意”的那一刻，共同见证你们的甜蜜承诺。</p>
+		</div>
+	</a>
+  </div>
+</div>
+<!-- 轮播标志 -->
+<ol class="lb-sign">
+  <li class="active"></li>
+  <li></li>
+  <li></li>
+</ol>
+<!-- 轮播控件 -->
+<div class="lb-ctrl left">＜</div>
+  <div class="lb-ctrl right">＞</div>
+  </div>
+</div>
+<div class="section">
+	<div class="section-title">
+		<p>众多优惠礼遇任您享</p>
+	</div>
+	<div class="section-card">
+		<div class="section-card-text">
+			<div class="section-card-text-title">
+				<p>贵宾金环会，时刻回馈您的忠实惠顾</p>
+			</div>
+			<div class="section-card-text-content">
+				<div>尊享贵宾金环会的优惠尊贵礼遇。每次与我们在一起时，您都将享受我们酒店和度假村产品各个方面的特权和优惠。</div>
+			</div>
+			<div class="section-tier">
+				<div class="section-tier-box">
+					<div class="section-tier-image"><img src="images/Gold.png" width="30px" height="21px"></div>
+					<div class="section-tier-name">黄金</div>
+				</div>
+				<div class="section-tier-box">
+					<div class="section-tier-image"><img src="images/Jade.png" width="30px" height="21px"></div>
+					<div class="section-tier-name">翡翠</div>
+				</div>
+				<div class="section-tier-box">
+					<div class="section-tier-image"><img src="images/Diamond.png" width="30px" height="21px"></div>
+					<div class="section-tier-name">钻石</div>
+				</div>
+			</div>
+			<div class="section-button">
+				<div class="section-button-content">
+				<form>
+				<input type="submit" value="立即加入" class="section-button-content">
+				</form>
+				</div>
+			</div>
+		</div>
+		<div class="section-card-image">
+			<img src="images/homepage.png" width="567px" height="384px">
+		</div>
+	</div>
+</div>
+<div class="section-1">
+	<div class="section-title">
+		<p>推荐优惠</p>
+	</div>
+	<div class="slick-list">
+		<div class="slick-list-box">
+			<div class="slick-list-box-card">
+		        <div class="card-image"><img src="images/t1.png" width="338px" height="169px"></div>
+				<div class="card-title"><p>香格里拉小假期</p></div>
+				<div class="card-txt">享受下次住宿的特别房价保证</div>
+				<div class="card-button-1">
+					<form>
+						<input type="button" value="查看详情" class="card-button">
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="slick-list-box">
+			<div class="slick-list-box-card">
+		         <div class="card-image"><img src="images/card-image2.jpg" width="338px" height="169px"></div>
+				 <div class="card-title"><p>自选包价 / 盛贸自选通</p></div>
+				<div class="card-txt">自由打造属于自己的酒店包价</div>
+					<div class="card-button-1">
+					<form>
+						<input type="button" value="查看详情" class="card-button">
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="slick-list-box">
+			<div class="slick-list-box-card">
+		        <div class="card-image"><img src="images/card-image3.jpg" width="338px" height="169px"></div>
+				<div class="card-title"><p>特赏礼遇</p></div>
+				<div class="card-txt">轻松享受更多额外超值优惠。</div>
+					<div class="card-button-1">
+					<form>
+						<input type="button" value="查看详情" class="card-button">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+    <div class="links">
+		<div class="links-link">
+			<div class="link-1">
+				<h6>查找或预定</h6>
+				<p class="link-p"><a href="我们的目的地.php">我们的目的地</a></p>
+				<p class="link-p"><a href="查找预定.php">查找预定</a></p>
+				<p class="link-p">会议与宴会</p>
+				<p class="link-p">餐厅与酒吧</p>
+			</div>
+			<div class="link-1">
+				<h6>贵宾金环会</h6>
+				<p class="link-p">会员计划概述</p>
+				<p class="link-p">加入贵宾金环会</p>
+				<p class="link-p">我的账户</p>
+				<p class="link-p">尚桌计划</p>
+				<p class="link-p">常见问题</p>
+			</div>
+			<div class="link-1">
+				<h6>关于香格里拉</h6>
+				<p class="link-p">关于我们</p>
+				<p class="link-p">我们的酒店品牌</p>
+				<p class="link-p">香格里拉中心</p>
+				<p class="link-p">香格里拉公寓</p>
+				<p class="link-p">联络我们</p>
+			</div>
+			<div class="link-1">
+				<h6></h6>
+				<p class="link-p">投资咨询</p>
+				<p class="link-p">职业发展</p>
+				<p class="link-p">企业社会责任</p>
+				<p class="link-p">新闻稿</p>
+			</div>
+		</div>
+		<div class="app">
+			<h6>开启无限精彩</h6>
+			<p class="link-p">畅游寰宇，尽在掌中 </p>
+			<div class="code">
+				<div class="qr"><img src="images/footer_qrcode.png" width="84px" height="84px"></div>
+				<div class="iphone"><img src="images/App-Store.png" width="110px" height="30px"></div>
+				<div class="google"><img src="images/Google-Play-Icon.png" width="110px" height="30px"></div>
+			</div>
+			<div class="icon">
+				<div class="icon-content"><img src="images/Facebook.png" width="20px" height="20px;"></div>
+				<div class="icon-content"><img src="images/Instagram.png" width="20px" height="20px;"></div>
+				<div class="icon-content"><img src="images/Twitter.png" width="20px" height="20px;"></div>
+				<div class="icon-content"><img src="images/YouTube.png" width="20px" height="20px;"></div>
+				<div class="icon-content"><img src="images/WeChat.png" width="20px" height="20px;"></div>
+				<div class="icon-content"><img src="images/Weibo.png" width="20px" height="20px;"></div>
+				<div class="icon-content"><img src="images/Youku.png" width="20px" height="20px;"></div>
+			</div>
+		</div>
+    </div>
+	<div class="brand-logo">
+		<div class="brand-logo-all">
+	       <div class="brand-logo-content"><img src="images/brand1.png" width="130px" height="60px"></div>
+		   <div class="brand-logo-content"><img src="images/brand2.png" width="130px" height="60px"></div>
+		   <div class="brand-logo-content"><img src="images/brand3.png" width="130px" height="60px"></div>
+		   <div class="brand-logo-content"><img src="images/brand4.png" width="130px" height="60px"></div>
+		   <div class="brand-logo-content"><img src="images/brand5.png" width="130px" height="60px"></div>
+		</div>
+	</div>
+	<div class="statement">
+		隐私条款 | 条款与细则 | 人身与财产安全 | 供应商行为准则
+	</div>
+	<div class="end">201824430639王琛琛</div>
+</div>
+</body>
+</html>

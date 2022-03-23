@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+.search-offer{
+	width: 1180px;
+	height: 59px;
+	background-color: #f4f5f6;
+	margin: 20px auto;
+	line-height: 52px;
+	
+}
+h3{
+	    font-family: SimSun,Microsoft YaHei,serif;
+}
+.input-text{
+	width: 300px;
+	height: 50px;
+	apperance:none;
+	margin-left: 100px;
+	margin-top: 2px;
+	border: 0px;
+	background-color: #f4f5f6;
+	
+}
+.input-submit{
+	width: 140px;
+	height: 36px;
+	background-color: #cba65d;
+	color: #fff;
+	border: 0px;
+	    font-family: Montserrat,SimHei,Microsoft YaHei,sans-serif;
+	margin-left: 400px;
+}
+.sort{
+	width: 1180px;
+	height: 30px;
+	margin: 10px auto;
+	text-align-last: right;
+	    font-family: SimSun,Microsoft YaHei,serif;
+}
+a{
+	color: aliceblue;
+}

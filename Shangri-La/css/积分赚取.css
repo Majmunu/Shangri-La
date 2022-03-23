@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+.bread-zhuanqu{
+	width: 1519px;
+	height: 54px;
+	background-color: #f4f5f6;
+}
+.crubs{
+	margin: 0 auto;
+    width: 1180px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 17px 0;
+	    font-family: Montserrat,SimHei,Microsoft YaHei,sans-serif;
+}
+a{
+	color: aliceblue;
+}

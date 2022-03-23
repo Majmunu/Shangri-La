@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+.p-reservation{
+	width: 1519px;
+	height: 578px;
+	background-image: url("images/查找预定.jpg");
+	align-items: center;
+}
+.p-reservation-box{
+	width: 620px;
+	height: 400px;
+	margin-left: 450px;
+	
+	position: absolute;
+	margin-top: 90px;
+
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,.16);
+    background-color: #fff;
+
+	
+}
+.p-reservation-title{
+	width: 620px;
+	height: 60px;
+    font-size: 24px;
+    text-align: center;
+    background-color: #f4f5f6;
+    color: #333;
+	line-height: 60px;
+    font-family: SimSun,Microsoft YaHei,serif;
+	margin-bottom: 20px;
+}
+.desc{
+	width: 500px;
+	height: 20px;
+	font-size: 14px;
+    line-height: 20px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	
+}
+.confirm{
+	width: 500px;
+	height: 77px;
+	
+	margin: 0 auto;
+	padding: 10px 10px;
+	font-size: 14px;
+}
+.confirm-form{
+	width: 500px;
+	height: 36px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+	padding-top: 10px;
+	
+}
+.confirm-submit{
+	width: 500px;
+	height: 46px;
+	margin: 0 auto;
+}
+.confirm-submit-on{
+		width: 500px;
+	height: 46px;
+     color: #fff;
+    background-color:  #ac8642;
+	border: 1px solid #ccc;
+}
